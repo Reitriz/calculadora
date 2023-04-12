@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <main>
+        <section id="visor">
+            <h1>Cálculos :</h1>
+            <div id="res">
+              
+            </div>
+            <aside id="n1">Número : </aside>
+            <aside id="n2">Número : </aside>
+        </section>
+        <section id="corpo">
+            <input type="button" value="0" id="zero" class="numero" onclick="zero()">
+            <input type="button" value="1" id="um" class="numero" 
+            onclick="um()">
+            <input type="button" value="2" id="dois" class="numero" onclick="dois()">
+            <input type="button" value="3" id="tres" class="numero" onclick="tres()">
+            <input type="button" value="4" id="quatro" class="numero" onclick="quatro()">
+            <input type="button" value="5" id="cinco" class="numero" onclick="cinco()">
+            <input type="button" value="6" id="seis" class="numero" onclick="seis()">
+            <input type="button" value="7" id="sete" class="numero" onclick="sete()">
+            <input type="button" value="8" id="oito" class="numero" onclick="oito()">
+            <input type="button" value="9" id="nove" class="numero" onclick="nove()">
+            <input type="button" value="Limpar" id="limpar" class="seletor" onclick="limpar()">
+            <input type="button" value="Enviar" id="enviar" class="seletor" onclick="enviar()">
+            <input type="radio" name="calc" id="isubt" checked>
+            <label for="isubt"><span class="material-icons">remove</span></label>
+            <input type="radio" name="calc" id="idivi">
+            <label for="idivi"><span class="material-icons">percent</span></label>
+            <input type="radio" name="calc" id="isoma">
+            <label for="isoma"><span class="material-icons">add</span></label>
+            <input type="radio" name="calc" id="imult">
+            <label for="imult"><span class="material-icons">emergency</span></label>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
